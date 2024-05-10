@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: relative;
+}
+
+.header__img{
+    width: 100%;
+    display: block;
+    opacity: 90%;
+}
+
+.hader__box-text{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    margin-left: 90px;
+    line-height: 43px;
+    border-bottom: 2px solid #6b9080;
+}
+
+.header__img-title{
+    font-family: "Caveat", cursive;
+    margin-left: 59px;
+}
+
+.header__img-span{
+    font-family: "Quicksand", sans-serif;
+    font-size: 75px;
+}
+
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "main__aside section__products";
+    grid-template-columns: 20% 80%;
+}
+
+/*ASIDE*/
+
+.main__aside{
+    grid-area: main__aside;
+    display: flex;
+    justify-content: center;
+    background-color: #efebce;
+}
+
+.aside__nav{
+    width: 70%;
+    padding: 30px 0;
+}
+
+.aside__nav-title{
+    font-family: "Quicksand", sans-serif;
+    color: #222725;
+    margin-bottom: 30px;
+}
+
+.aside__nav ul{
+    list-style-type: none;
+}
+
+.aside__nav ul li{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #adb5bd;
+
+}
+
+.aside__nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Quicksand", sans-serif;
+}
+
+.aside__nav ul li a:hover{
+    font-weight: bold;
+}
+
+
+/*PRODUCTS*/
+
+.section__products{
+    grid-area: section__products;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 30px;
+    justify-content: space-around;
+    background-color: #f8f7ff;
+    padding: 80px 0;
+}
+
+.card__img-container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__img{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__img:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
+.product__card-text{
+    background-color: #d4a373;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__text-title{
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+}
+
+.card__text-price{
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    margin: 10px 0 5px 0;
+}
+
+.card__btn{
+    background-color: #0f4a55;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.card__btn a{
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+}
+
+.card__btn:hover{
+    background-color: #247d8d;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #463f3a;
+    padding: 20px 0;
+}
+
+footer h3{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
